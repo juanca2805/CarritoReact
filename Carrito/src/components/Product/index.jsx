@@ -5,14 +5,14 @@ import { Card, Image, Label, Button } from 'semantic-ui-react'
 
 function Product(props) {
   return(
-    <Card style={{ marginTop: 15 }}>
-      <Image size="small" src={props.picture}  />
-      <Card.Content>
-        <Card.Header style={{fontSize: 15}}>{props.name}</Card.Header>
+    <Card  style={{ marginTop: 30 ,}}>
+      <Image  width="400px" src={props.picture}  />
+      <Card.Content >
+        <Card.Header  style={{fontSize: 15}}>{props.name}</Card.Header>
         <Card.Meta>
           <Format number={props.price}/>
         </Card.Meta>
-        <Card.Description>
+        <Card.Description  style={{marginTop: 30}}>
           <Label>{props.marca}</Label>
           <Label>{props.status} en stock</Label>
         </Card.Description>
